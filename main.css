@@ -1,0 +1,335 @@
+*{
+  margin: 0;
+}
+.header{
+  background-color: #333;
+  text-align: right;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+.header ul li{
+  display: inline;
+  padding: 25px;
+  padding-right: 25px;
+}
+.header ul li a{
+  text-decoration: none;
+  font-size: 25px;
+}
+.header li:hover {
+  color: red;
+  transform: scale(1.3);
+}
+.header .logo {
+  float: left;
+  overflow: hidden;
+  color:springgreen;
+  font-size: 30px;
+}
+#wrap{
+  height: 700px;
+  background-image: url(./Background_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;   
+}
+.btn_one {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    border: 1px #fbbc05 solid;
+    padding: 1em 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn_one:hover{
+  background-color:burlywood;
+  transition: 0.5s;
+  border: 3px solid black;
+  color: #111;
+
+}
+.main{
+  text-align: center;
+  padding-top: 20%;
+}
+
+
+#nav {
+    height: 100px;
+    width: 100px;
+    display: none;
+    margin: 1em 1em;  
+    font-size:30px;
+    cursor:pointer"
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+
+  }
+  .sidenav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+    transform: scale(1.3);
+  }
+  .sidenav ul li{
+    list-style-type: none;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+    
+  }
+
+  .typewriter{
+    margin-bottom: 40px;
+    margin-left: 45px;
+  }
+  .typewriter h1 {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid orange; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: 
+        typing 5s steps(50, end),
+        blink-caret .75s step-end infinite;
+        animation-iteration-count: infinite;
+    }
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    /* The typewriter cursor effect */
+.typewriter {
+  color: #fbbc05;
+
+}
+/* @media screen and (max-width:600px){
+  
+    *{
+      margin: 0;
+    }
+    #nav{
+      height: 100px;
+      width: 100px;
+      display: block;
+      margin: 2em 1em;  
+      font-size:30px;
+  }
+  .sidenav {
+    height: auto;
+    width: px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+    margin-top: -160px;
+  }
+
+  
+}
+
+@media screen and (min-width:1300px) {
+.sidenav {
+  height: 10%;
+  width: 100%;
+  background-color: #111;
+}
+.typewriter h1{
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+}
+.sidenav a {
+  display: inline;
+  color: #f1f1f1;
+  padding-left: 50px;
+  margin-right: 50px;
+}
+a{
+  font-size: 25px;
+  margin-right:50px ;
+}
+.sidenav .closebtn {
+  display: none;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:1300px) {
+  .head {
+    height: auto;
+    width: 100%;
+    font-size:30px;
+    cursor:pointer;
+    padding-bottom: 50px;
+    background-color: #333;
+}
+.head a{
+  text-decoration: none;
+  display: block;
+  padding-top: 40px;
+  color: #f1f1f1;
+
+}
+
+.sidenav .closebtn {
+  display: none;
+}
+.main{
+  width: 100%;
+  height: 100%;
+  margin-top: -100px;
+  background-image: url(./Background_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;    
+}
+
+.btn_one {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  border: 1px #fbbc05 solid;
+  padding: 1em 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 60px;
+  /* border-radius: 100px;    */
+/* }
+.typewriter{
+  margin-top: -100px;
+}
+} */
+
+/*@media screen and (max-width:800px) and (min-width:600px){
+    .typewriter h1{
+      font-size: 20px;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: red;
+    }
+} */
+
+
+
+
+@media screen and (max-width:1350px){
+  .header ul li{
+    width: 100%;
+    float: right;
+    text-align: center;
+    background-color: #333;
+    margin-top:15px;
+  }
+  .logo{
+    width: 100%;
+    margin-top:-40px;
+
+  }
+  .header ul li a{
+    font-size: 35px;
+  }
+}
+
+
+@media screen and (max-width:800px){
+  .typewriter h1{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color:tomato;
+  }
+}
+
+
+@media screen and (max-width:600px){
+  .typewriter h1{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: orangered;
+    margin-top: 150px;
+  }
+  .header{
+    display: none;
+  }
+  #nav {
+    display: block;
+    margin: -10em 1em;  
+    font-size:30px;
+    cursor:pointer"
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+
+  }
+  .header {
+    list-style-type: none;
+  }
+  #wrap{
+    height: 100% auto;
+    background-image: url(./Background_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+  }
+
+}
+@media screen and (min-width:600px) {
+  .sidenav{
+    display: none;
+  }
+}
+
+
+
+

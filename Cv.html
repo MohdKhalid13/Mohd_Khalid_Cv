@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <style>
+   
+.btn_one:hover{
+  background-color:burlywood;
+  transition: 0.5s;
+  border: 3px solid #333;
+  color: #111;
+}
+#nav {
+    height: 100px;
+    width: 100px;
+    display: none;
+    margin: 1em 1em;  
+    font-size:30px;
+    cursor:pointer"
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+    transform: scale(1.3);
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  a{
+    color: #fbbc05;
+  }
+  img{
+    height: 250px;
+    width: 250px;
+    padding-bottom: 20px;
+  }
+  h1{
+    color: aliceblue;
+    padding-bottom: 25px;
+  }
+
+
+
+@media screen and (max-width:600px) {
+    *{
+        margin: 0;
+    }
+    #nav{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 1em 1em;  
+    font-size:30px;
+}
+.sidenav {
+    height: auto;
+    width: px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+    margin-top: -160px;
+  }
+
+}
+@media screen and (min-width:600px) {
+    *{
+        margin: 0;
+    }
+    .sidenav {
+    height: 100%;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+  }
+  .sidenav .closebtn {
+    display: none;
+  }
+  
+}
+
+</style>
+</head>
+<body>
+    <div class="wrapper">     
+        <span id="nav" onclick="openNav()" style="cursor: pointer;">&#9776;</span>     
+           <div id="mySidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()">&times;</a> 
+                <img src="./MK.png">
+                <h1>Mohd Khalid</h1> 
+                <a href="#" onclick="Home()"><i class="fa fa-home" style="color:brown ;">&nbsp</i>Home</a>  
+                <a href="#"><i class="fa fa-github"  style="color:white ;">&nbsp</i>GitHub</a>
+                <a href="#"><i class="fa fa-linkedin"  style="color:blue ;">&nbsp</i>linkedin</a>
+            </div>    
+    </div>
+   <script src="./index.js"></script>
+ </body>
+
+</html>
